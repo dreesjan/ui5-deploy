@@ -1,0 +1,19 @@
+name: "UI5 Deploy"
+inputs:
+  type:
+    required: true
+  user:
+    required: true
+  password:
+    required: true
+  host:
+    required: true
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.type }}
+    - ${{ inputs.user }}
+    - ${{ inputs.password }}
+    - ${{ inputs.host }}
