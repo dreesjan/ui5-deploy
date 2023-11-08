@@ -6,9 +6,9 @@ echo $1
 if [ "$1" = "btp" ]
 then
     # build the mta archive and deploy it to the BTP
-    mbt build --mtar -p=cf -t ui5app.mtar
+    mbt build -p=cf -t mta_archives --mtar=ui5app.mtar
     cf login -a $2 -u $3 -p $4
-    cf deploy ui5app.mtar -f
+    cf deploy ./mta_archives/ui5app.mtar -f
     exit 0
 else
     echo "Please provide valid deployment type."
