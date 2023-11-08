@@ -1,13 +1,20 @@
 name: "UI5 Deploy"
 inputs:
   type:
+    description: "Deployment Type: BTP, ..."
     required: true
   user:
+    description: "Username"
     required: true
   password:
+    description: "Password"
     required: true
   host:
+    description: "URL"
     required: true
+  sub-account-id:
+    description: "Sub account of BTP"
+    required: false
 
 runs:
   using: "docker"
