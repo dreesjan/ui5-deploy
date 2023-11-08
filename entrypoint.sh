@@ -3,7 +3,7 @@
 echo $1
 
 # BTP Deployment
-if [ '$1' -eq 'btp' ]
+if [ $1 -eq 'btp' ]
 then
     # build the mta archive and deploy it to the BTP
     mbt build --mtar -p=cf -t ui5app.mtar
