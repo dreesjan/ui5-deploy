@@ -21,6 +21,7 @@ runs:
   image: "Dockerfile"
   args:
     - ${{ inputs.type }}
+    - ${{ inputs.host }}
+    - ${{ inputs.sub-account-id }}
     - ${{ inputs.user }}
     - ${{ inputs.password }}
-    - ${{ inputs.host }}

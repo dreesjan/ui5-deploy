@@ -1,13 +1,11 @@
 #!/bin/sh -l
 
-echo $1
-
 # BTP Deployment
 if [ "$1" = "btp" ]
 then
     # build the mta archive and deploy it to the BTP
     mbt build -p=cf -t mta_archives --mtar=ui5app.mtar
-    cf login -a $2 -u $3 -p $4
+    cf login -a $2 -o $3 -u $4 -p $5
     cf deploy ./mta_archives/ui5app.mtar -f
     exit 0
 else
