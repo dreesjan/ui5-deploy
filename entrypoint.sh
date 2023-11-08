@@ -1,5 +1,7 @@
 #!/bin/sh -l
 
+echo $1
+
 # BTP Deployment
 if [ $1 -eq 'btp' ]
 then
