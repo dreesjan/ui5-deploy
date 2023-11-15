@@ -12,8 +12,8 @@ inputs:
   host:
     description: "URL"
     required: true
-  sub-account-id:
-    description: "Sub account of BTP"
+  org:
+    description: "ORG"
     required: false
 
 runs:
