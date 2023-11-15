@@ -1,7 +1,5 @@
 FROM node:18
 
-RUN whoami
-
 # Cloud Foundry CLI Installation
 RUN wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | apt-key add -
 RUN echo "deb https://packages.cloudfoundry.org/debian stable main" | tee /etc/apt/sources.list.d/cloudfoundry-cli.list
