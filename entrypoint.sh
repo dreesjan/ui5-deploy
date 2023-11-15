@@ -8,7 +8,7 @@ then
     mbt build -p=cf -t mta_archives --mtar=app.mtar
     cf login -a $2 -o $3 -u $4 -p $5
     # cf install-plugin multiapps -f
-    cf install-plugin ./multiapps-plugin.linux64 -f
+    cf install-plugin ~/multiapps-plugin.linux64 -f
     cf deploy ./mta_archives/app.mtar -f
     exit 0
 else
