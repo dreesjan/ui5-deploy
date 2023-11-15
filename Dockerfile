@@ -15,7 +15,7 @@ RUN npm i -g mbt
 # RUN cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org
 # RUN cf install-plugin -r CF-Community "multiapps" -f
 RUN wget -q -O /root/multiapps-plugin.linux64 https://github.com/cloudfoundry-incubator/multiapps-cli-plugin/releases/latest/download/multiapps-plugin.linux64 
-RUN cf install-plugin /root/multiapps-plugin.linux64 -f
+# RUN cf install-plugin /root/multiapps-plugin.linux64 -f
 
 # Copies the shell script to the container
 COPY entrypoint.sh /entrypoint.sh
