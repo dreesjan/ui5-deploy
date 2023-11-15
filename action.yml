@@ -22,6 +22,6 @@ runs:
   args:
     - ${{ inputs.type }}
     - ${{ inputs.host }}
-    - ${{ inputs.sub-account-id }}
+    - ${{ inputs.org }}
     - ${{ inputs.user }}
     - ${{ inputs.password }}
