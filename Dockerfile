@@ -1,4 +1,4 @@
-FROM node:18-bullseye
+FROM node:18
 
 # Cloud Foundry CLI Installation
 RUN wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | apt-key add -
