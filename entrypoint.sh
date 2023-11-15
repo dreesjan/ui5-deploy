@@ -3,6 +3,7 @@
 # BTP Deployment
 if [ "$1" = "btp" ]
 then
+    whoami
     # build the mta archive and deploy it to the BTP
     mbt build -p=cf -t mta_archives --mtar=app.mtar
     cf login -a $2 -o $3 -u $4 -p $5
