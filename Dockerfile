@@ -12,7 +12,7 @@ RUN npm i -g mbt
 # Installation of multiapps plugin for deploying the mtar
 RUN cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org
 # RUN cf install-plugin -r CF-Community "multiapps" -f
-RUN wget -q -O https://github.com/cloudfoundry-incubator/multiapps-cli-plugin/releases/latest/download/multiapps-plugin.linux64
+RUN wget -q https://github.com/cloudfoundry-incubator/multiapps-cli-plugin/releases/latest/download/multiapps-plugin.linux64
 RUN cf install-plugin ./multiapps-plugin.linux64
 
 # Copies the shell script to the container
